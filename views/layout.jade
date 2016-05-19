@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		.container
+			img.logo(src="/images/nodejs-logo.png")
+			ul
+				li
+					a(href="/") Home
+				li
+					a(href="/posts/add") Add post
+				li
+					a(href="/categories/add") Add Category
+		block content
+		footer
+			p MonkBlog &copy; 2016
